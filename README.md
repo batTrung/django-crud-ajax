@@ -3,7 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.6-brightgreen.svg)](https://python.org)
 [![Django Version](https://img.shields.io/badge/django-2.1-brightgreen.svg)](https://djangoproject.com)
 
-<a target="_blank" href="https://www.djangobat.com/blog/tong-hop-cac-tips-dung-model-trong-django-part-1/"><img src="https://www.djangobat.com/media/posts/2019/04/13/model_OYTFQfB.jpg" alt="" /></a>
+<a target="_blank" href="https://www.djangobat.com/blog/huong-dan-thuc-hien-crud-voi-ajax/"><img src="https://www.djangobat.com/media/posts/2019/10/03/djang-crud.jpg" alt="" /></a>
 
 ## BLOG djangobat
 
