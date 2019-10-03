@@ -9,10 +9,6 @@
 
 [https://www.djangobat.com/](https://www.djangobat.com/)
 
-## BLOG
-
-[https://www.djangobat.com/](https://www.djangobat.com/)
-
 ## Cài đặt
 
 Đầu tiên, tải repository về máy tính:
