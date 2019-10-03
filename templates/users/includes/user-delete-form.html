@@ -1,0 +1,15 @@
+<form method="post" action="{% url "user_delete" user.pk %}" id="js-user-delete-form">
+    {% csrf_token %}
+    <div class="modal-header">                      
+        <h4 class="modal-title">Xóa nhân sự</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    </div>
+    <div class="modal-body">                    
+        <p>Bạn có chắc muốn xóa thông tin của "{{ user.last_name }}" ?</p>
+        <p class="text-warning"><small>Thông tin sẽ không thể khôi phục lại.</small></p>
+    </div>
+    <div class="modal-footer">
+        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+        <input type="submit" class="btn btn-danger" value="Delete">
+    </div>
+</form>

@@ -1,0 +1,28 @@
+{% for user in users  %}
+<tr>
+    <td>
+        <span class="custom-checkbox">
+            <input type="checkbox" id="checkbox{{ user.id }}" name="options[]" value="{{ user.id }}">
+            <label for="checkbox{{ user.id }}"></label>
+        </span>
+    </td>
+    <td>{{ user.first_name }} {{ user.last_name }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.address }}</td>
+    <td>{{ user.phone }}</td>
+    <td>
+        <a href="" id="js-user-update" data-url="{% url "user_update" pk=user.pk %}" class="edit">
+            <i class="fa fa-pencil"></i>
+        </a>
+        <a href="" id="js-user-delete" data-url="{% url "user_delete" pk=user.pk %}" class="delete">
+            <i class="fa fa-trash"></i>
+        </a>
+    </td>
+</tr>
+{% empty %}
+<tr>
+    <td align="center" colspan="6">
+        Chưa có người dùng nào
+    </td>
+</tr>
+{% endfor %}
