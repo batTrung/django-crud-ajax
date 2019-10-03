@@ -1,86 +1,43 @@
 # Hướng dẫn thực hiện CRUD bằng Ajax/Jquery
 
-[![Python Version](https://img.shields.io/badge/python-3.6-brightgreen.svg)](https://python.org)
+[![Python Version](https://img.shields.io/badge/python-3.7-brightgreen.svg)](https://python.org)
 [![Django Version](https://img.shields.io/badge/django-2.1-brightgreen.svg)](https://djangoproject.com)
 
 <a target="_blank" href="https://www.djangobat.com/blog/huong-dan-thuc-hien-crud-voi-ajax/"><img src="https://www.djangobat.com/media/posts/2019/10/03/djang-crud.jpg" alt="" /></a>
 
-## BLOG djangobat
+## BLOG 
 
 [https://www.djangobat.com/](https://www.djangobat.com/)
 
-## Running Locally
+## BLOG
 
-First, clone the repository to your local machine:
+[https://www.djangobat.com/](https://www.djangobat.com/)
 
-```
-git clone https://github.com/vitorfs/woid.git
-```
+## Cài đặt
 
-Install the requirements:
+Đầu tiên, tải repository về máy tính:
 
 ```bash
-pip install -r requirements/dev.txt
+git clone https://github.com/batTrung/django-crud-ajax.git
 ```
 
-Apply the migrations:
+Cài đặt requirements:
+
+```bash
+cd django-crud-ajax
+pip install -r requirements.txt
+```
+
+Áp dụng migrations:
 
 ```bash
 python manage.py migrate
 ```
 
-Load the initial data:
-
-```bash
-python manage.py loaddata services.json
-```
-
-Finally, run the development server:
+Chạy development server
 
 ```bash
 python manage.py runserver
 ```
 
-The site will be available at **127.0.0.1:8000**.
-
-
-## Crawlers
-
-You can run the crawlers manually to collect the top stories using the following command:
-
-```bash
-python manage.py crawl reddit
-```
-
-You can pass multiple services at once:
-
-```bash
-python manage.py crawl reddit hn nytimes
-```
-
-Valid values: `hn`, `reddit`, `github`, `nytimes`, `producthunt`.
-
-### The New York Times
-
-To crawl The New York Times you will need an API key.
-
-You can register one application at [developer.nytimes.com](https://developer.nytimes.com).
-
-### Product Hunt
-
-Product Hunt require an API key to consume their API. 
-
-You can register one application at [api.producthunt.com/v1/docs](https://api.producthunt.com/v1/docs)
-
-### Cron Jobs
-
-You can set up cron jobs to execute the crawlers periodically. Here is what my crontab looks like:
-
-```
-*/5 * * * * /home/woid/venv/bin/python /home/woid/woid/manage.py crawl reddit hn producthunt >> /home/woid/logs/cron.log 2>&1
-*/30 * * * * /home/woid/venv/bin/python /home/woid/woid/manage.py crawl nytimes github >> /home/woid/logs/cron.log 2>&1
-```
-
-## License
-
-The source code is released under the [Apache 2.0 license](https://github.com/vitorfs/woid/blob/master/LICENSE).
+Mở Chrome hay FireFox : **127.0.0.1:8000**
