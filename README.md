@@ -27,6 +27,7 @@ pip install -r requirements.txt
 Áp dụng migrations:
 
 ```bash
+python manage.py makemigrations users
 python manage.py migrate
 ```
 
